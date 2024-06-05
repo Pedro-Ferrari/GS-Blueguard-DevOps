@@ -21,13 +21,13 @@ BlueGuard é uma aplicação desenvolvida para monitoramento marítmo. Este proj
 
 ## Passo a passo para rodar o projeto
 
-1- Baixar o arquivo/clonar o repositório
-2- entrar local correto dos arquivos, '' cd /gs-main/blueguard ''
-3- mvn clean package (para criar o .JAR / dependendo não é necessário)
-4- ls target/    ( verificar se o .JAR está listado corretamente )
-5- docker-compose up --build
-6- Se tudo estiver configurado corretamente, o seu aplicativo Spring Boot deverá estar rodando em um contêiner Docker, acessível na porta 8080 do seu host.
-7- Verificar também os dados persistentes, se estão sendo salvos conforme esperado no volume 'app-data'.
-8- FIM!
+- Baixar o arquivo/clonar o repositório
+- entrar local correto dos arquivos, '' cd /gs-main/blueguard ''
+- mvn clean package (para criar o .JAR / dependendo não é necessário)
+- ls target/    ( verificar se o .JAR está listado corretamente )
+- docker-compose up --build
+- Se tudo estiver configurado corretamente, o seu aplicativo Spring Boot deverá estar rodando em um contêiner Docker, acessível na porta 8080 do seu host.
+- Verificar também os dados persistentes, se estão sendo salvos conforme esperado no volume 'app-data'.
+- FIM!
 
 
