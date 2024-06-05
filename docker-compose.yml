@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
+      - SPRING_DATASOURCE_USERNAME=rm551577
+      - SPRING_DATASOURCE_PASSWORD=071004
+    volumes:
+      - app-data:/app/data
+    networks:
+      - app-network
+
+volumes:
+  app-data:
+
+networks:
+  app-network:
