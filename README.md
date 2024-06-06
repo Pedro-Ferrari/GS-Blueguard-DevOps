@@ -27,7 +27,7 @@ BlueGuard é uma aplicação desenvolvida para monitoramento marítmo. Este proj
 - ls target/    ( verificar se o .JAR está listado corretamente )
 - docker-compose up --build
 - Se tudo estiver configurado corretamente, o seu aplicativo Spring Boot deverá estar rodando em um contêiner Docker, acessível na porta 8080 do seu host.
-- Verificar também os dados persistentes, se estão sendo salvos conforme esperado no volume 'app-data'.
+- Verificar também os dados persistentes, se estão sendo salvos conforme esperado no volume criado.
 - FIM!
 
 
