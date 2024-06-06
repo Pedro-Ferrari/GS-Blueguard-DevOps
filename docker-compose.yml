@@ -11,13 +11,25 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
       - SPRING_DATASOURCE_USERNAME=rm551577
       - SPRING_DATASOURCE_PASSWORD=071004
+    networks:
+      - app-network
+    depends_on:
+      - oracle
+
+  oracle:
+    image: wnameless/oracle-xe-11g
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_ALLOW_REMOTE=true
     volumes:
-      - app-data:/app/data
+      - oracle-data:/u01/app/oracle
     networks:
       - app-network
 
 volumes:
-  app-data:
+  oracle-data:
 
 networks:
   app-network:
+    driver: bridge
