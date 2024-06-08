@@ -31,11 +31,11 @@ BlueGuard é uma aplicação desenvolvida para monitoramento marítmo. Este proj
 - FIM!
 
 ## Códigos utilizados para rodar:
-git clone https://github.com/Pedro-Ferrari/GS-Blueguard-DevOps.git
-cd GS-Blueguard-DevOps/blueguard
-docker-compose up -d
-obs:inicia os serviços definidos no docker-compose.yml
-docker-compose ps
-obs:mostra o status
+- git clone https://github.com/Pedro-Ferrari/GS-Blueguard-DevOps.git
+- cd GS-Blueguard-DevOps/blueguard
+- docker-compose up -d
+- obs:inicia os serviços definidos no docker-compose.yml
+- docker-compose ps
+- obs:mostra o status
 
 
